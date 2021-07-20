@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5024879C26A766FF00762E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5024879B26A766FF00762E94 /* AppDelegate.swift */; };
+		5024879E26A766FF00762E94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5024879D26A766FF00762E94 /* SceneDelegate.swift */; };
+		502487A026A766FF00762E94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5024879F26A766FF00762E94 /* ViewController.swift */; };
+		502487A326A766FF00762E94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 502487A126A766FF00762E94 /* Main.storyboard */; };
+		502487A626A766FF00762E94 /* otterClock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 502487A426A766FF00762E94 /* otterClock.xcdatamodeld */; };
+		502487A826A7670200762E94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 502487A726A7670200762E94 /* Assets.xcassets */; };
+		502487AB26A7670200762E94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 502487A926A7670200762E94 /* LaunchScreen.storyboard */; };
+		502487B626A7670300762E94 /* otterClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502487B526A7670300762E94 /* otterClockTests.swift */; };
+		502487C126A7670300762E94 /* otterClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502487C026A7670300762E94 /* otterClockUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		502487B226A7670300762E94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5024879026A766FF00762E94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5024879726A766FF00762E94;
+			remoteInfo = otterClock;
+		};
+		502487BD26A7670300762E94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5024879026A766FF00762E94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5024879726A766FF00762E94;
+			remoteInfo = otterClock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5024879826A766FF00762E94 /* otterClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = otterClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5024879B26A766FF00762E94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5024879D26A766FF00762E94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5024879F26A766FF00762E94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		502487A226A766FF00762E94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		502487A526A766FF00762E94 /* otterClock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = otterClock.xcdatamodel; sourceTree = "<group>"; };
+		502487A726A7670200762E94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		502487AA26A7670200762E94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		502487AC26A7670200762E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		502487B126A7670300762E94 /* otterClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = otterClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		502487B526A7670300762E94 /* otterClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = otterClockTests.swift; sourceTree = "<group>"; };
+		502487B726A7670300762E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		502487BC26A7670300762E94 /* otterClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = otterClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		502487C026A7670300762E94 /* otterClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = otterClockUITests.swift; sourceTree = "<group>"; };
+		502487C226A7670300762E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5024879526A766FF00762E94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502487AE26A7670300762E94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502487B926A7670300762E94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5024878F26A766FF00762E94 = {
+			isa = PBXGroup;
+			children = (
+				5024879A26A766FF00762E94 /* otterClock */,
+				502487B426A7670300762E94 /* otterClockTests */,
+				502487BF26A7670300762E94 /* otterClockUITests */,
+				5024879926A766FF00762E94 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5024879926A766FF00762E94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5024879826A766FF00762E94 /* otterClock.app */,
+				502487B126A7670300762E94 /* otterClockTests.xctest */,
+				502487BC26A7670300762E94 /* otterClockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5024879A26A766FF00762E94 /* otterClock */ = {
+			isa = PBXGroup;
+			children = (
+				5024879B26A766FF00762E94 /* AppDelegate.swift */,
+				5024879D26A766FF00762E94 /* SceneDelegate.swift */,
+				5024879F26A766FF00762E94 /* ViewController.swift */,
+				502487A126A766FF00762E94 /* Main.storyboard */,
+				502487A726A7670200762E94 /* Assets.xcassets */,
+				502487A926A7670200762E94 /* LaunchScreen.storyboard */,
+				502487AC26A7670200762E94 /* Info.plist */,
+				502487A426A766FF00762E94 /* otterClock.xcdatamodeld */,
+			);
+			path = otterClock;
+			sourceTree = "<group>";
+		};
+		502487B426A7670300762E94 /* otterClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				502487B526A7670300762E94 /* otterClockTests.swift */,
+				502487B726A7670300762E94 /* Info.plist */,
+			);
+			path = otterClockTests;
+			sourceTree = "<group>";
+		};
+		502487BF26A7670300762E94 /* otterClockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				502487C026A7670300762E94 /* otterClockUITests.swift */,
+				502487C226A7670300762E94 /* Info.plist */,
+			);
+			path = otterClockUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5024879726A766FF00762E94 /* otterClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 502487C526A7670300762E94 /* Build configuration list for PBXNativeTarget "otterClock" */;
+			buildPhases = (
+				5024879426A766FF00762E94 /* Sources */,
+				5024879526A766FF00762E94 /* Frameworks */,
+				5024879626A766FF00762E94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = otterClock;
+			productName = otterClock;
+			productReference = 5024879826A766FF00762E94 /* otterClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		502487B026A7670300762E94 /* otterClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 502487C826A7670300762E94 /* Build configuration list for PBXNativeTarget "otterClockTests" */;
+			buildPhases = (
+				502487AD26A7670300762E94 /* Sources */,
+				502487AE26A7670300762E94 /* Frameworks */,
+				502487AF26A7670300762E94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				502487B326A7670300762E94 /* PBXTargetDependency */,
+			);
+			name = otterClockTests;
+			productName = otterClockTests;
+			productReference = 502487B126A7670300762E94 /* otterClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		502487BB26A7670300762E94 /* otterClockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 502487CB26A7670300762E94 /* Build configuration list for PBXNativeTarget "otterClockUITests" */;
+			buildPhases = (
+				502487B826A7670300762E94 /* Sources */,
+				502487B926A7670300762E94 /* Frameworks */,
+				502487BA26A7670300762E94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				502487BE26A7670300762E94 /* PBXTargetDependency */,
+			);
+			name = otterClockUITests;
+			productName = otterClockUITests;
+			productReference = 502487BC26A7670300762E94 /* otterClockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5024879026A766FF00762E94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					5024879726A766FF00762E94 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					502487B026A7670300762E94 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 5024879726A766FF00762E94;
+					};
+					502487BB26A7670300762E94 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 5024879726A766FF00762E94;
+					};
+				};
+			};
+			buildConfigurationList = 5024879326A766FF00762E94 /* Build configuration list for PBXProject "otterClock" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5024878F26A766FF00762E94;
+			productRefGroup = 5024879926A766FF00762E94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5024879726A766FF00762E94 /* otterClock */,
+				502487B026A7670300762E94 /* otterClockTests */,
+				502487BB26A7670300762E94 /* otterClockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5024879626A766FF00762E94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				502487AB26A7670200762E94 /* LaunchScreen.storyboard in Resources */,
+				502487A826A7670200762E94 /* Assets.xcassets in Resources */,
+				502487A326A766FF00762E94 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502487AF26A7670300762E94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502487BA26A7670300762E94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5024879426A766FF00762E94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				502487A026A766FF00762E94 /* ViewController.swift in Sources */,
+				502487A626A766FF00762E94 /* otterClock.xcdatamodeld in Sources */,
+				5024879C26A766FF00762E94 /* AppDelegate.swift in Sources */,
+				5024879E26A766FF00762E94 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502487AD26A7670300762E94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				502487B626A7670300762E94 /* otterClockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502487B826A7670300762E94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				502487C126A7670300762E94 /* otterClockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		502487B326A7670300762E94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5024879726A766FF00762E94 /* otterClock */;
+			targetProxy = 502487B226A7670300762E94 /* PBXContainerItemProxy */;
+		};
+		502487BE26A7670300762E94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5024879726A766FF00762E94 /* otterClock */;
+			targetProxy = 502487BD26A7670300762E94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		502487A126A766FF00762E94 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				502487A226A766FF00762E94 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		502487A926A7670200762E94 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				502487AA26A7670200762E94 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		502487C326A7670300762E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		502487C426A7670300762E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		502487C626A7670300762E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR37RAHGF5;
+				INFOPLIST_FILE = otterClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bobotts.otterClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		502487C726A7670300762E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR37RAHGF5;
+				INFOPLIST_FILE = otterClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bobotts.otterClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		502487C926A7670300762E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR37RAHGF5;
+				INFOPLIST_FILE = otterClockTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bobotts.otterClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/otterClock.app/otterClock";
+			};
+			name = Debug;
+		};
+		502487CA26A7670300762E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR37RAHGF5;
+				INFOPLIST_FILE = otterClockTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bobotts.otterClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/otterClock.app/otterClock";
+			};
+			name = Release;
+		};
+		502487CC26A7670300762E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR37RAHGF5;
+				INFOPLIST_FILE = otterClockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bobotts.otterClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = otterClock;
+			};
+			name = Debug;
+		};
+		502487CD26A7670300762E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR37RAHGF5;
+				INFOPLIST_FILE = otterClockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bobotts.otterClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = otterClock;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5024879326A766FF00762E94 /* Build configuration list for PBXProject "otterClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				502487C326A7670300762E94 /* Debug */,
+				502487C426A7670300762E94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		502487C526A7670300762E94 /* Build configuration list for PBXNativeTarget "otterClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				502487C626A7670300762E94 /* Debug */,
+				502487C726A7670300762E94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		502487C826A7670300762E94 /* Build configuration list for PBXNativeTarget "otterClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				502487C926A7670300762E94 /* Debug */,
+				502487CA26A7670300762E94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		502487CB26A7670300762E94 /* Build configuration list for PBXNativeTarget "otterClockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				502487CC26A7670300762E94 /* Debug */,
+				502487CD26A7670300762E94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		502487A426A766FF00762E94 /* otterClock.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				502487A526A766FF00762E94 /* otterClock.xcdatamodel */,
+			);
+			currentVersion = 502487A526A766FF00762E94 /* otterClock.xcdatamodel */;
+			path = otterClock.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5024879026A766FF00762E94 /* Project object */;
+}

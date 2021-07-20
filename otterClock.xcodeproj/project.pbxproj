@@ -16,6 +16,7 @@
 		502487AB26A7670200762E94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 502487A926A7670200762E94 /* LaunchScreen.storyboard */; };
 		502487B626A7670300762E94 /* otterClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502487B526A7670300762E94 /* otterClockTests.swift */; };
 		502487C126A7670300762E94 /* otterClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502487C026A7670300762E94 /* otterClockUITests.swift */; };
+		502487CF26A7728300762E94 /* SeasideResortNF in Resources */ = {isa = PBXBuildFile; fileRef = 502487CE26A7728300762E94 /* SeasideResortNF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		502487BC26A7670300762E94 /* otterClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = otterClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		502487C026A7670300762E94 /* otterClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = otterClockUITests.swift; sourceTree = "<group>"; };
 		502487C226A7670300762E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		502487CE26A7728300762E94 /* SeasideResortNF */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SeasideResortNF; path = ../../SeasideResortNF; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		5024879A26A766FF00762E94 /* otterClock */ = {
 			isa = PBXGroup;
 			children = (
+				502487CE26A7728300762E94 /* SeasideResortNF */,
 				5024879B26A766FF00762E94 /* AppDelegate.swift */,
 				5024879D26A766FF00762E94 /* SceneDelegate.swift */,
 				5024879F26A766FF00762E94 /* ViewController.swift */,
@@ -234,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				502487CF26A7728300762E94 /* SeasideResortNF in Resources */,
 				502487AB26A7670200762E94 /* LaunchScreen.storyboard in Resources */,
 				502487A826A7670200762E94 /* Assets.xcassets in Resources */,
 				502487A326A766FF00762E94 /* Main.storyboard in Resources */,

@@ -134,6 +134,10 @@
                         <color key="backgroundColor" red="0.98305395880000002" green="0.80465670089999997" blue="0.61115536729999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Fdn-hB-AhO"/>
+                    <connections>
+                        <outlet property="txtTimeLeft" destination="fQF-9e-QHx" id="YDK-0H-GK5"/>
+                        <outlet property="txtWorking" destination="znP-4B-z74" id="c5B-wp-h7b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ov9-Lt-cdb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

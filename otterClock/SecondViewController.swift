@@ -8,12 +8,17 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+    @IBOutlet weak var txtWorking: UILabel!
+    @IBOutlet weak var txtTimeLeft: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
     
 
     /*

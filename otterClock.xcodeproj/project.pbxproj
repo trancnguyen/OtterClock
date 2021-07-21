@@ -17,6 +17,7 @@
 		502487B626A7670300762E94 /* otterClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502487B526A7670300762E94 /* otterClockTests.swift */; };
 		502487C126A7670300762E94 /* otterClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502487C026A7670300762E94 /* otterClockUITests.swift */; };
 		502487CF26A7728300762E94 /* SeasideResortNF in Resources */ = {isa = PBXBuildFile; fileRef = 502487CE26A7728300762E94 /* SeasideResortNF */; };
+		504F55CA26A894320049F83C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504F55C926A894320049F83C /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		502487C026A7670300762E94 /* otterClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = otterClockUITests.swift; sourceTree = "<group>"; };
 		502487C226A7670300762E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		502487CE26A7728300762E94 /* SeasideResortNF */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SeasideResortNF; path = ../../SeasideResortNF; sourceTree = "<group>"; };
+		504F55C926A894320049F83C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				502487A926A7670200762E94 /* LaunchScreen.storyboard */,
 				502487AC26A7670200762E94 /* Info.plist */,
 				502487A426A766FF00762E94 /* otterClock.xcdatamodeld */,
+				504F55C926A894320049F83C /* SecondViewController.swift */,
 			);
 			path = otterClock;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				502487A026A766FF00762E94 /* ViewController.swift in Sources */,
 				502487A626A766FF00762E94 /* otterClock.xcdatamodeld in Sources */,
 				5024879C26A766FF00762E94 /* AppDelegate.swift in Sources */,
+				504F55CA26A894320049F83C /* SecondViewController.swift in Sources */,
 				5024879E26A766FF00762E94 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

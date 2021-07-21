@@ -17,11 +17,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func touchedSubmit(_ sender: UIButton) {
-        var toatlWorkTime = txtWorkTime.text
-        
-        
-        
-        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var secondVC: SecondViewController = segue.destination as! SecondViewController
+    
+        secondVC.recivedString = txtWorkTime.text!
     }
     
 }

@@ -12,13 +12,15 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var txtWorking: UILabel!
     @IBOutlet weak var txtTimeLeft: UILabel!
     
-
+    var recivedString: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        txtTimeLeft.text = recivedString
 
         // Do any additional setup after loading the view.
     }
-    
     
 
     /*

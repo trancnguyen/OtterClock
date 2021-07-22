@@ -28,7 +28,7 @@ class SecondViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        let gifURL : String = "https://64.media.tumblr.com/f4f90a402e369e25e22a1cc38b51e960/tumblr_mh6lzfrWTE1rhs8j5o1_500.gifv"
+        let gifURL : String = "https://64.media.tumblr.com/3ae5079b3e03cf9f1cbaedd8b98d347d/tumblr_metdt7jv7z1rhs8j5o1_500.gifv"
         let imageFromURL = UIImage.gifImageWithURL(gifURL)
         gifView.image = imageFromURL
         
@@ -82,10 +82,6 @@ class SecondViewController: UIViewController {
                 breakTime = 5
                 setupBreakTimer()
             }
-        }else{
-            let alert = UIAlertController(title: "All Done With Work", message: "Congrats you finished your work!! \n Slide down to start a new timer.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
-            self.present(alert, animated: true)
         }
     }
     

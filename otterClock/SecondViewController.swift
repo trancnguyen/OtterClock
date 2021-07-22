@@ -12,36 +12,77 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var txtWorking: UILabel!
     @IBOutlet weak var txtTimeLeft: UILabel!
     
-    var recivedString:Int = 0 
+    var recivedString:Int = 0
     var timer:Timer?
-
-override func viewDidLoad() {
-    super.viewDidLoad()
-    txtWorking.text = "Work Time"
-    if recivedString >= 25{
-        txtTimeLeft.text = "25 Minutes left"
-    }else{
-        txtTimeLeft.text = "\(recivedString) Minutes left"
-    }
-    setupTimer()
-}
-
-func setupTimer() {
-    timer = Timer.scheduledTimer(timeInterval: 60.0, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: true)
-}
-
-@objc func onTimerFires() {
-    recivedString -= 1
-    txtTimeLeft.text = "\(recivedString) Minutes left"
-    txtWorking.text = "Work Time"
-
-    if recivedString <= 0 {
-        txtWorking.text = "Break Time"
-        timer?.invalidate()
-        timer = nil
+    var breakTime = 5
+    var timesToRepeat:Int = 1
+    
+    
         
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        if recivedString > 25 {
+            if recivedString % 25 == 0{
+                timesToRepeat = recivedString / 25
+                recivedString = 25
+            }
+        }
+        
+        txtWorking.text = "Work Time"
+        if recivedString >= 25{
+            txtTimeLeft.text = "25 Minutes left"
+        }else{
+            txtTimeLeft.text = "\(recivedString) Minutes left"
+        }
+        setupTimer()
     }
-}
+
+
+    func setupTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: true)
+    }
+        
+    func setupBreakTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(onTimerBreakFires), userInfo: nil, repeats: true)
+    }
+
+
+    @objc func onTimerFires() {
+        if timesToRepeat > 0 {
+            if recivedString == 25{
+                txtTimeLeft.text = "25 Minutes left"
+            }else{
+                txtTimeLeft.text = "\(recivedString) Minutes left"
+            }
+            txtWorking.text = "WorkTime"
+            recivedString -= 1
+            txtTimeLeft.text = "\(recivedString) Minutes left"
+
+            if recivedString <= 0 {
+                timer?.invalidate()
+                timer = nil
+                timesToRepeat -= 1
+                breakTime = 5
+                setupBreakTimer()
+            }
+        }
+    }
+
+    @objc func onTimerBreakFires() {
+        txtWorking.text = "Break Time"
+        breakTime -= 1
+        txtTimeLeft.text = "\(breakTime) Minutes left"
+
+        if breakTime <= 0 {
+            timer?.invalidate()
+            timer = nil
+            recivedString = 25
+            setupTimer()
+        }
+    }
+    
+    
     /*
     // MARK: - Navigation
 

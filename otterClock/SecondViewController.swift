@@ -12,17 +12,32 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var txtWorking: UILabel!
     @IBOutlet weak var txtTimeLeft: UILabel!
     
-    var recivedString: String = ""
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    var recivedString:Int = 0 
+    var timer:Timer?
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    txtWorking.text = "Work Time"
+    txtTimeLeft.text = "25 Minutes left"
+    setupTimer()
+}
+
+func setupTimer() {
+    timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: true)
+}
+
+@objc func onTimerFires() {
+    recivedString -= 1
+    txtTimeLeft.text = "\(recivedString) Minutes left"
+    txtWorking.text = "Work Time"
+
+    if recivedString <= 0 {
+        txtWorking.text = "Break Time"
+        timer?.invalidate()
+        timer = nil
         
-        txtTimeLeft.text = recivedString
-
-        // Do any additional setup after loading the view.
     }
-    
-
+}
     /*
     // MARK: - Navigation
 
@@ -34,3 +49,4 @@ class SecondViewController: UIViewController {
     */
 
 }
+

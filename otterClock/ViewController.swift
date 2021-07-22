@@ -21,8 +21,9 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         var secondVC: SecondViewController = segue.destination as! SecondViewController
-    
-        secondVC.recivedString = txtWorkTime.text!
+        let workTime: Int? = Int(txtWorkTime.text!)
+        secondVC.recivedString = workTime ?? 0
+        
     }
     
 }

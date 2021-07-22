@@ -16,10 +16,11 @@
 		502487AB26A7670200762E94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 502487A926A7670200762E94 /* LaunchScreen.storyboard */; };
 		502487B626A7670300762E94 /* otterClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502487B526A7670300762E94 /* otterClockTests.swift */; };
 		502487C126A7670300762E94 /* otterClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502487C026A7670300762E94 /* otterClockUITests.swift */; };
-		502487CF26A7728300762E94 /* SeasideResortNF in Resources */ = {isa = PBXBuildFile; fileRef = 502487CE26A7728300762E94 /* SeasideResortNF */; };
 		504F55CA26A894320049F83C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504F55C926A894320049F83C /* SecondViewController.swift */; };
 		505C002E26AA0DC9004DB3B7 /* AddGifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C002D26AA0DC9004DB3B7 /* AddGifImage.swift */; };
 		505C003226AA132E004DB3B7 /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 505C003126AA132D004DB3B7 /* giphy.gif */; };
+		505C003626AA17A9004DB3B7 /* SEASRN__.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 505C003426AA17A9004DB3B7 /* SEASRN__.ttf */; };
+		505C003726AA17A9004DB3B7 /* Nick's Fonts License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 505C003526AA17A9004DB3B7 /* Nick's Fonts License.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +56,11 @@
 		502487BC26A7670300762E94 /* otterClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = otterClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		502487C026A7670300762E94 /* otterClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = otterClockUITests.swift; sourceTree = "<group>"; };
 		502487C226A7670300762E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		502487CE26A7728300762E94 /* SeasideResortNF */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SeasideResortNF; path = ../../SeasideResortNF; sourceTree = "<group>"; };
 		504F55C926A894320049F83C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		505C002D26AA0DC9004DB3B7 /* AddGifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGifImage.swift; sourceTree = "<group>"; };
 		505C003126AA132D004DB3B7 /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = giphy.gif; path = ../../../giphy.gif; sourceTree = "<group>"; };
+		505C003426AA17A9004DB3B7 /* SEASRN__.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SEASRN__.ttf; sourceTree = "<group>"; };
+		505C003526AA17A9004DB3B7 /* Nick's Fonts License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Nick's Fonts License.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +111,7 @@
 		5024879A26A766FF00762E94 /* otterClock */ = {
 			isa = PBXGroup;
 			children = (
-				502487CE26A7728300762E94 /* SeasideResortNF */,
+				505C003326AA17A9004DB3B7 /* SeasideResortNF */,
 				5024879B26A766FF00762E94 /* AppDelegate.swift */,
 				5024879D26A766FF00762E94 /* SceneDelegate.swift */,
 				5024879F26A766FF00762E94 /* ViewController.swift */,
@@ -141,6 +143,15 @@
 				502487C226A7670300762E94 /* Info.plist */,
 			);
 			path = otterClockUITests;
+			sourceTree = "<group>";
+		};
+		505C003326AA17A9004DB3B7 /* SeasideResortNF */ = {
+			isa = PBXGroup;
+			children = (
+				505C003426AA17A9004DB3B7 /* SEASRN__.ttf */,
+				505C003526AA17A9004DB3B7 /* Nick's Fonts License.txt */,
+			);
+			path = SeasideResortNF;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,10 +258,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				505C003226AA132E004DB3B7 /* giphy.gif in Resources */,
-				502487CF26A7728300762E94 /* SeasideResortNF in Resources */,
 				502487AB26A7670200762E94 /* LaunchScreen.storyboard in Resources */,
 				502487A826A7670200762E94 /* Assets.xcassets in Resources */,
 				502487A326A766FF00762E94 /* Main.storyboard in Resources */,
+				505C003726AA17A9004DB3B7 /* Nick's Fonts License.txt in Resources */,
+				505C003626AA17A9004DB3B7 /* SEASRN__.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

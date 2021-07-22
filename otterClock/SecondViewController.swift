@@ -13,7 +13,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var txtWorking: UILabel!
     @IBOutlet weak var txtTimeLeft: UILabel!
     @IBOutlet weak var gifView: UIImageView!
-    gifView.loadGif(name: string)
+    
     
     
     
@@ -28,6 +28,10 @@ class SecondViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        let gifURL : String = "https://64.media.tumblr.com/f4f90a402e369e25e22a1cc38b51e960/tumblr_mh6lzfrWTE1rhs8j5o1_500.gifv"
+        let imageFromURL = UIImage.gifImageWithURL(gifURL)
+        gifView.image = imageFromURL
+        
         
         if recivedString > 25 {
             if recivedString % 25 == 0{
@@ -49,11 +53,11 @@ class SecondViewController: UIViewController {
 
 
     func setupTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: true)
     }
         
     func setupBreakTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(onTimerBreakFires), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerBreakFires), userInfo: nil, repeats: true)
     }
 
 
@@ -64,6 +68,9 @@ class SecondViewController: UIViewController {
             }else{
                 txtTimeLeft.text = "\(recivedString) Minutes left"
             }
+            let gifURL : String = "https://64.media.tumblr.com/f4f90a402e369e25e22a1cc38b51e960/tumblr_mh6lzfrWTE1rhs8j5o1_500.gifv"
+            let imageFromURL = UIImage.gifImageWithURL(gifURL)
+            gifView.image = imageFromURL
             txtWorking.text = "WorkTime"
             recivedString -= 1
             txtTimeLeft.text = "\(recivedString) Minutes left"
@@ -75,13 +82,18 @@ class SecondViewController: UIViewController {
                 breakTime = 5
                 setupBreakTimer()
             }
+        }else{
+            let alert = UIAlertController(title: "All Done With Work", message: "Congrats you finished your work!! \n Slide down to start a new timer.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+            self.present(alert, animated: true)
         }
-        let alert = UIAlertController(title: "All Done With Work", message: "Congrats you finished your work!! \n Slide down to start a new timer.", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
-        self.present(alert, animated: true)
     }
+    
 
     @objc func onTimerBreakFires() {
+        let gifURL : String = "https://64.media.tumblr.com/367a735dbe44750007d8b8a66cc5b523/tumblr_n56k4gjlnT1rhs8j5o1_400.gifv"
+        let imageFromURL = UIImage.gifImageWithURL(gifURL)
+        gifView.image = imageFromURL
         txtWorking.text = "Break Time"
         breakTime -= 1
         txtTimeLeft.text = "\(breakTime) Minutes left"

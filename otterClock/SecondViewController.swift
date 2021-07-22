@@ -11,6 +11,8 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var txtWorking: UILabel!
     @IBOutlet weak var txtTimeLeft: UILabel!
+    @IBOutlet weak var image: UIImageView!
+    
     
     var recivedString:Int = 0
     var timer:Timer?
@@ -67,6 +69,9 @@ class SecondViewController: UIViewController {
                 setupBreakTimer()
             }
         }
+        let alert = UIAlertController(title: "All Done With Work", message: "Congrats you finished your work!! \n Slide down to start a new timer.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+        self.present(alert, animated: true)
     }
 
     @objc func onTimerBreakFires() {
@@ -81,6 +86,19 @@ class SecondViewController: UIViewController {
             setupTimer()
         }
     }
+    
+    
+    let gifURL : String = "https://drwngbrd.tumblr.com/page/3"
+        let imageURL = UIImage.gifImageWithURL(gifURL)
+        let imageView3 = UIImageView(image: imageURL)
+        imageView3.frame = CGRect(x: 20.0, y: 390.0, width: self.view.frame.size.width - 40, height: 150.0)
+        view.addSubview(imageView3)
+    
+    
+    
+    
+    
+    
     
     
     /*

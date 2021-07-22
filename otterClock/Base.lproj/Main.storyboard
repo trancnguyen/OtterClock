@@ -135,6 +135,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Fdn-hB-AhO"/>
                     <connections>
+                        <outlet property="image" destination="ttf-Oh-I4g" id="YIA-BY-mfJ"/>
                         <outlet property="txtTimeLeft" destination="fQF-9e-QHx" id="YDK-0H-GK5"/>
                         <outlet property="txtWorking" destination="znP-4B-z74" id="c5B-wp-h7b"/>
                     </connections>

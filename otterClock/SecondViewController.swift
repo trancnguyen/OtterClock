@@ -15,20 +15,18 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var gifView: UIImageView!
     
     
-    
-    
-    
     var recivedString:Int = 0
     var timer:Timer?
     var breakTime = 5
     var timesToRepeat:Int = 1
     var reainderTime: Int = 0
     
+    let gifWorkArray = ["https://64.media.tumblr.com/3ae5079b3e03cf9f1cbaedd8b98d347d/tumblr_metdt7jv7z1rhs8j5o1_500.gifv", "https://64.media.tumblr.com/f4f90a402e369e25e22a1cc38b51e960/tumblr_mh6lzfrWTE1rhs8j5o1_500.gifv", "https://64.media.tumblr.com/f5cfd0c87b3a63e18499396232bb9f53/tumblr_mjk3xcpRbM1rhs8j5o1_500.gifv", "https://64.media.tumblr.com/7ad64abb17867342d2b02a5722d71214/tumblr_mjbn9yKMgc1rhs8j5o1_500.gifv", "https://64.media.tumblr.com/96b71b23f8ffd4371c86b46fb18c30df/tumblr_mvvfrq7gxu1rhs8j5o1_500.gifv", "https://64.media.tumblr.com/d5a32f467ac9cc92f9ac557f62722a6c/tumblr_mtretyaChm1rhs8j5o1_500.gifv", ]
     
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        let gifURL : String = "https://64.media.tumblr.com/3ae5079b3e03cf9f1cbaedd8b98d347d/tumblr_metdt7jv7z1rhs8j5o1_500.gifv"
+        let gifURL : String = gifWorkArray.randomElement()!
         let imageFromURL = UIImage.gifImageWithURL(gifURL)
         gifView.image = imageFromURL
         
@@ -68,9 +66,6 @@ class SecondViewController: UIViewController {
             }else{
                 txtTimeLeft.text = "\(recivedString) Minutes left"
             }
-            let gifURL : String = "https://64.media.tumblr.com/f4f90a402e369e25e22a1cc38b51e960/tumblr_mh6lzfrWTE1rhs8j5o1_500.gifv"
-            let imageFromURL = UIImage.gifImageWithURL(gifURL)
-            gifView.image = imageFromURL
             txtWorking.text = "WorkTime"
             recivedString -= 1
             txtTimeLeft.text = "\(recivedString) Minutes left"
@@ -99,6 +94,9 @@ class SecondViewController: UIViewController {
             timer = nil
             recivedString = 25
             setupTimer()
+            let gifURL : String = gifWorkArray.randomElement()!
+            let imageFromURL = UIImage.gifImageWithURL(gifURL)
+            gifView.image = imageFromURL
         }
     }
     

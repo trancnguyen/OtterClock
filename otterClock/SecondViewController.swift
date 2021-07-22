@@ -6,18 +6,23 @@
 //
 
 import UIKit
+import ImageIO
 
 class SecondViewController: UIViewController {
     
     @IBOutlet weak var txtWorking: UILabel!
     @IBOutlet weak var txtTimeLeft: UILabel!
-    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var gifView: UIImageView!
+    gifView.loadGif(name: string)
+    
+    
     
     
     var recivedString:Int = 0
     var timer:Timer?
     var breakTime = 5
     var timesToRepeat:Int = 1
+    var reainderTime: Int = 0
     
     
         
@@ -28,6 +33,8 @@ class SecondViewController: UIViewController {
             if recivedString % 25 == 0{
                 timesToRepeat = recivedString / 25
                 recivedString = 25
+            } else{
+                
             }
         }
         
@@ -86,15 +93,6 @@ class SecondViewController: UIViewController {
             setupTimer()
         }
     }
-    
-    
-    let gifURL : String = "https://drwngbrd.tumblr.com/page/3"
-        let imageURL = UIImage.gifImageWithURL(gifURL)
-        let imageView3 = UIImageView(image: imageURL)
-    imageView3.frame = CGRect(x: 20.0, y: 390.0, width: self.view.frame.size.width - 40, height: 150.0)
-        view.addSubview(imageView3)
-
-
     
     
     

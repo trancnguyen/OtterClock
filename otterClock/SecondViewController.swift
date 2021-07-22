@@ -18,7 +18,11 @@ class SecondViewController: UIViewController {
 override func viewDidLoad() {
     super.viewDidLoad()
     txtWorking.text = "Work Time"
-    txtTimeLeft.text = "25 Minutes left"
+    if recivedString >= 25{
+        txtTimeLeft.text = "25 Minutes left"
+    }else{
+        txtTimeLeft.text = "\(recivedString) Minutes left"
+    }
     setupTimer()
 }
 

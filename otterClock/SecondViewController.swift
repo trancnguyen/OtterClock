@@ -27,7 +27,7 @@ override func viewDidLoad() {
 }
 
 func setupTimer() {
-    timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: true)
+    timer = Timer.scheduledTimer(timeInterval: 60.0, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: true)
 }
 
 @objc func onTimerFires() {

@@ -98,7 +98,13 @@ class SecondViewController: UIViewController {
             let imageFromURL = UIImage.gifImageWithURL(gifURL)
             gifView.image = imageFromURL
         }
+        if timesToRepeat == 0 {
+            let alert = UIAlertController(title: "Congrats You Finished Your Timer!", message: "Congrats you finished your time! Swipe down to start a new timer.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
     }
+    
     
     
     

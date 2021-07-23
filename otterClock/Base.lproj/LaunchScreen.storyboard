@@ -24,7 +24,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Group D.5 -&gt; Lali, Naaz, Tran, &amp; Amy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tr-Zu-Gaq">
                                 <rect key="frame" x="20" y="44" width="374" height="759"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SeasideResortNF" family="SeasideResortNF" pointSize="85"/>
+                                <fontDescription key="fontDescription" name="SeasideResortNF" family="SeasideResortNF" pointSize="83"/>
                                 <color key="textColor" red="0.32757481449999998" green="0.75824274660000002" blue="0.8282828283" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" systemColor="labelColor"/>

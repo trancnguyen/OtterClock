@@ -23,6 +23,8 @@ class SecondViewController: UIViewController {
     
     let gifWorkArray = ["https://64.media.tumblr.com/3ae5079b3e03cf9f1cbaedd8b98d347d/tumblr_metdt7jv7z1rhs8j5o1_500.gifv", "https://64.media.tumblr.com/f4f90a402e369e25e22a1cc38b51e960/tumblr_mh6lzfrWTE1rhs8j5o1_500.gifv", "https://64.media.tumblr.com/f5cfd0c87b3a63e18499396232bb9f53/tumblr_mjk3xcpRbM1rhs8j5o1_500.gifv", "https://64.media.tumblr.com/7ad64abb17867342d2b02a5722d71214/tumblr_mjbn9yKMgc1rhs8j5o1_500.gifv", "https://64.media.tumblr.com/96b71b23f8ffd4371c86b46fb18c30df/tumblr_mvvfrq7gxu1rhs8j5o1_500.gifv", "https://64.media.tumblr.com/d5a32f467ac9cc92f9ac557f62722a6c/tumblr_mtretyaChm1rhs8j5o1_500.gifv", ]
     
+    let gifBreakArray = ["https://64.media.tumblr.com/4c37cf7628bd38637cd070a4ef91bae0/tumblr_nnlgh6dFAo1rhs8j5o1_500.gifv","https://64.media.tumblr.com/20affbc4eb7df2d7b651d89321673bbf/tumblr_n4ieu9Ry1v1rhs8j5o1_500.gifv","https://64.media.tumblr.com/b285826a8eee44c4b5567ae19028db36/tumblr_n2auvl08Jb1rhs8j5o1_500.gifv","https://64.media.tumblr.com/cdd487ecc4aed180baf063e6130df3e8/tumblr_n10myzDF921rhs8j5o1_500.gifv","https://64.media.tumblr.com/ddc5db08beb8e61b00d09c88a88a1efa/tumblr_mzrz3qtz441rhs8j5o1_500.gifv","https://64.media.tumblr.com/836d60d8188560c292d2c05e5f6a8aa6/tumblr_n9npm9ccvs1rhs8j5o1_500.gifv","https://64.media.tumblr.com/84770ecff3a88ecc59d3bf04c57cdd65/tumblr_mg44v5rLmo1rhs8j5o1_500.gifv"]
+    
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,7 +84,7 @@ class SecondViewController: UIViewController {
     
 
     @objc func onTimerBreakFires() {
-        let gifURL : String = "https://64.media.tumblr.com/367a735dbe44750007d8b8a66cc5b523/tumblr_n56k4gjlnT1rhs8j5o1_400.gifv"
+        let gifURL : String = gifBreakArray.randomElement()!
         let imageFromURL = UIImage.gifImageWithURL(gifURL)
         gifView.image = imageFromURL
         txtWorking.text = "Break Time"
@@ -108,7 +110,7 @@ class SecondViewController: UIViewController {
     
     
     
-    
+      
     /*
     // MARK: - Navigation
 
